@@ -54,6 +54,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          repository: 
+          repository: venk404/venk404-Helm-Assignments-k8s
           event-type: update-image
           client-payload: '{"image_tag": "${{ github.sha }}", "repository": "${{ github.repository }}"}'
