@@ -17,6 +17,7 @@ import json
 load_dotenv()
 
 
+
 class Student(BaseModel):
 
     name: str = Field(examples=["Ganesh Gaitonde"])
