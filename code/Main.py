@@ -17,7 +17,6 @@ import json
 load_dotenv()
 
 
-
 class Student(BaseModel):
 
     name: str = Field(examples=["Ganesh Gaitonde"])
@@ -216,7 +215,7 @@ async def delete(id: int) -> dict:
 
 @version_v1.get("/HealthCheck", status_code=200)
 async def HealthCheck() -> dict:
-    message = "All services is Up"
+    message = "All services is Upssssss"
     return {"message": message}
 
 
