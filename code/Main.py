@@ -224,6 +224,5 @@ app.include_router(version_v2, prefix='/v2', tags=['Version 2 Api Endpoints'])
 
 
 if __name__ == "__main__":
-    # Get the PORT from environment variable, or default to 8000
-    port = int(os.getenv("APP_PORT", 8000))
+    port = int(os.getenv("PORT", 8000))
     uvicorn.run(app, host="0.0.0.0", port=port)
