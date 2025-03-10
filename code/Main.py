@@ -215,7 +215,7 @@ async def delete(id: int) -> dict:
 
 @version_v1.get("/HealthCheck", status_code=200)
 async def HealthCheck() -> dict:
-    message = "All services is Upssssss"
+    message = "All services is Up"
     return {"message": message}
 
 
