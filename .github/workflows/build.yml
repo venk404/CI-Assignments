@@ -71,6 +71,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.PAT_TOKEN }}
-          repository: venk404/venk404-Implementing-Continuous-Delivery-with-ArgoCD.git
+          repository: venk404/venk404-Implementing-Continuous-Delivery-with-ArgoCD
           event-type: update-image
           client-payload: '{"image_tag": "${{ github.sha }}", "repository": "${{ github.repository }}"}'
